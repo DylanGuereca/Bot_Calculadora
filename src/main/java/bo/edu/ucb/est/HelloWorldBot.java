@@ -14,6 +14,21 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
  *
  * @author Usuario
  */
-public class HelloWorldBot {
+public class HelloWorldBot extends TelegramLongPollingBot {
     
+    @Override
+    public String getBotToken() {
+        return "2024798596:AAHhJXhXNvlp2FYAssV2h9wbhVSVQ_FezRw";
+    }
+    
+    @Override
+    public void onUpdateReceived(Update update) {
+          
+    }
+
+    
+    @Override
+    public String getBotUsername() {
+        return "calcu16_bot";
+    }
 }
